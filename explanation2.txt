@@ -1,0 +1,13 @@
+In dns detect, we parse the arguments using Argparse and pass it to sniff provided by scapy. In sniff, we pass interface, tracefile, 
+bpf filter. If interface and tracefile is not present, we sniff through all the interfaces. 
+If tracefile is present we parse through the tracefile and analyze it.
+
+The sniff function is provided with a callback function dns_detect to parse packets.
+In dns_detect, a dictionary is created is store the tuple txid and pkt. TXID is unique for every packet hence we can use a dictionary to 
+minimize the search time. We check the packet for all the relevant layers similar to dns_inject.
+
+If the dictionary is empty we store the packet, otherwise the compare the next packet with the previous packet in the dictionary and 
+compare the payload and response data. If both are not equal, it indicates that someone has messed up with the packet and we print 
+it as a DNS poisoning attempt. print the packet records in the format shown above where for each packet we check all the DNS 
+REsource Records and list out the IP Addresses. For all other packets which are not modified, they are not listed and are ignored.
+
