@@ -1,0 +1,24 @@
+DNS poisoning attempt detected
+TXID 10533 Request URL www.example.com.
+Answer1 [172.25.81.248]
+Answer2 [93.184.216.34]
+DNS poisoning attempt detected
+TXID 10533 Request URL www.example.com.
+Answer1 [172.25.81.248]
+Answer2 [93.184.216.34]
+DNS poisoning attempt detected
+TXID 23372 Request URL www.amazon.com.
+Answer1 [b'www.cdn.amazon.com.']
+Answer2 [172.25.81.248]
+DNS poisoning attempt detected
+TXID 23372 Request URL www.amazon.com.
+Answer1 [b'www.cdn.amazon.com.']
+Answer2 [172.25.81.248]
+DNS poisoning attempt detected
+TXID 42394 Request URL www.iitk.ac.in.
+Answer1 [202.3.77.184]
+Answer2 [172.25.81.248]
+DNS poisoning attempt detected
+TXID 42394 Request URL www.iitk.ac.in.
+Answer1 [202.3.77.184]
+Answer2 [172.25.81.248]

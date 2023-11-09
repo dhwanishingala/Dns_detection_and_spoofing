@@ -1,0 +1,3 @@
+the destination IP address does not matche the IP of the device querying the DNS server.
+
+two responses observed in the wireshark ap while analysing the traffic. 

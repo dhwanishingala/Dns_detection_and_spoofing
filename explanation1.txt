@@ -1,0 +1,12 @@
+the arguments in command line are parsed using argparser. it takes the values and if the interface is not assigned then sets default interface.
+netifaces is used for interface details. and scapy command sniff implements the injection logic.
+
+Sniffs packets that match filter ( + udp port 53) on specified interface (if not specified, use default interface.) If a hostname file is 
+specified, check if entry for domain name requested in captured packet is present in file. If yes, spoof the answer with ip address 
+mentioned in the entry in file. Do nothing, otherwise. If no hostname file is specified, spoof answer section of all captured packets with 
+IP address of local machine's default interface.
+
+# http://www.cs.dartmouth.edu/~sergey/netreads/local/reliable-dns-spoofing-with-python-scapy-nfqueue.html
+# https://stackoverflow.com/questions/166506/finding-local-ip-addresses-using-pythons-stdlib
+scapy-documentations 
+Dns-scapy documentations
